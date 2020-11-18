@@ -131,9 +131,22 @@ public class ResultMap implements java.io.Serializable {
 
     @Test
     public void test3() {
-        Date now = new Date();
-        System.out.println(now);
-        Date date = DateUtils.addDays(now, -Integer.parseInt("3"));
-        System.out.println(date);
+//        Date now = new Date();
+//        System.out.println(now);
+//        Date date = DateUtils.addDays(now, -Integer.parseInt("3"));
+//        System.out.println(date);
+
+        Map<Long,Object> updateCommonlyVehicleBeansMap = new HashMap<>();
+        updateCommonlyVehicleBeansMap.put(1l,"2");
+        updateCommonlyVehicleBeansMap.put(2l,"4");
+
+        updateCommonlyVehicleBeansMap.put(3l,"1");
+        System.out.println(updateCommonlyVehicleBeansMap.get(1l));
+        System.out.println(updateCommonlyVehicleBeansMap.get(2l));
+        System.out.println(updateCommonlyVehicleBeansMap.get(3l));
+        System.out.println(updateCommonlyVehicleBeansMap.get(4l));
+        System.out.println(updateCommonlyVehicleBeansMap.get(4l) != null);
+        System.out.println(updateCommonlyVehicleBeansMap.get(4l) == null);
+
     }
 }
