@@ -136,11 +136,11 @@ public class ResultMap implements java.io.Serializable {
 //        Date date = DateUtils.addDays(now, -Integer.parseInt("3"));
 //        System.out.println(date);
 
-        Map<Long,Object> updateCommonlyVehicleBeansMap = new HashMap<>();
-        updateCommonlyVehicleBeansMap.put(1l,"2");
-        updateCommonlyVehicleBeansMap.put(2l,"4");
+        Map<Long, Object> updateCommonlyVehicleBeansMap = new HashMap<>();
+        updateCommonlyVehicleBeansMap.put(1l, "2");
+        updateCommonlyVehicleBeansMap.put(2l, "4");
 
-        updateCommonlyVehicleBeansMap.put(3l,"1");
+        updateCommonlyVehicleBeansMap.put(3l, "1");
         System.out.println(updateCommonlyVehicleBeansMap.get(1l));
         System.out.println(updateCommonlyVehicleBeansMap.get(2l));
         System.out.println(updateCommonlyVehicleBeansMap.get(3l));
@@ -149,4 +149,24 @@ public class ResultMap implements java.io.Serializable {
         System.out.println(updateCommonlyVehicleBeansMap.get(4l) == null);
 
     }
+
+    @Test
+    public void test4() {
+        int total = 25;
+        int size = 10;
+        List<Integer> longList = new ArrayList<>(total);
+        for (int i = 0; i < total; i++) {
+            longList.add(i);
+        }
+        int subTotal = total % size == 0 ? total / size : total / size + 1;
+        for (int i = 0; i < subTotal; i++) {
+            int i1 = (i + 1) * size;
+
+            List<Integer> integers = longList.subList(i * size, Math.min(i1, total));
+            System.out.println(integers);
+        }
+
+
+    }
+
 }
