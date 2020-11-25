@@ -12,6 +12,7 @@
         <module>service</module>
         <module>test</module>
         <module>common</module>
+        <module>dubbo-test</module>
     </modules>
 
     <properties>
