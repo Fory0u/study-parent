@@ -7,4 +7,6 @@ package com.xiangxue.service.url;
  * @Version 1.0.0
  */
 public class UrlTest {
+
+
 }
