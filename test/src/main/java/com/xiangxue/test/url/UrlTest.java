@@ -2,6 +2,7 @@ package com.xiangxue.test.url;
 
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -43,6 +44,16 @@ public class UrlTest {
         System.out.println("ints1.subList(1,2):"+ints1.subList(1,2));
 
         System.out.println("ints1:"+ints1);
+    }
+
+    @Test
+    public void test3(){
+
+        System.out.println("" + new BigDecimal(8)
+                .divide(new BigDecimal(8 + 0), 3, BigDecimal.ROUND_HALF_UP)
+                .multiply(new BigDecimal(100))
+                .intValue() + "%");
+
     }
 
 }

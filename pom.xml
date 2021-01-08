@@ -13,6 +13,7 @@
         <module>test</module>
         <module>common</module>
         <module>dubbo-test</module>
+        <module>nginx-test</module>
     </modules>
 
     <properties>
